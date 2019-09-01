@@ -1,0 +1,50 @@
+h1 {
+    color: black;
+    font-size: 60px;
+}
+
+img {
+    width: 250px;
+}
+
+body {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: rgb(200, 226, 236);
+    min-height: 100vh;
+    font-family: 'Chilanka', cursive;
+}
+
+header {
+    padding: 0 10px;
+}
+
+header a {
+    color: blueviolet;
+    border: 10px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 34px;
+}
+
+footer {
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid green;
+    padding: 8px;  
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid blue;
+    background: grey;
+    padding: 8px;
+    color: azure;
+}
+
+p {
+    font-size: 20px;
+}
