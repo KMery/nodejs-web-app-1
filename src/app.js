@@ -5,6 +5,8 @@ const hbs = require('hbs');
 const geoCode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
+const port = process.env.PORT || 5000;
+
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
@@ -97,6 +99,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(5000, () => {
+app.listen(port, () => {
     console.log('El servidor esta escuchando en puerto 5000...');    
 });
