@@ -9,7 +9,7 @@ const forecast = (lat, long, callback) => {
         } else if (body.error) {
             callback(body.error);
         } else {
-            callback(undefined, (body.currently.summary + '. Actualmente la temperatura es de ' + body.currently.temperature + '°. La probabilidad de lluvia es de ' + body.currently.precipProbability + '%.'))
+            callback(undefined, (body.currently.summary + '. Actualmente la temperatura es de ' + body.currently.temperature + '°. La máxima es de ' + body.daily.data[0].temperatureHigh + '° la mínima es de ' + body.daily.data[0].temperatureLow + '°.La probabilidad de lluvia es de ' + body.currently.precipProbability + '%. El porcentaje de humedad es de ' + body.currently.humidity + '%'))
         }
     })
 }
